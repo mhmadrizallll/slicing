@@ -1,0 +1,392 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+}
+
+.nav {
+  background-color: #2f6b4f;
+  padding-bottom: 300px;
+}
+
+.container {
+  width: 1210px;
+  margin: 0 auto;
+}
+
+.nav .container {
+  padding-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.brand span {
+  font-size: 20px;
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 27px;
+}
+
+.menu-item {
+  opacity: 0.6;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+  position: relative;
+}
+
+.active {
+  opacity: 1;
+}
+
+.menu-item::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 0%;
+  height: 4px;
+  background-color: white;
+  border-radius: 50px;
+  transition: all 0.3s;
+}
+
+.menu-item:hover::before {
+  width: 100%;
+}
+
+.menu-item:hover {
+  opacity: 1;
+}
+
+.hero {
+  margin: 80px auto;
+  width: 999px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.judul-hero {
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 32px;
+  line-height: 78px;
+}
+
+.text-hero {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 27px;
+}
+
+.btn-hero {
+  margin-top: 71px;
+}
+
+.btn-secondary {
+  padding: 23px 32px;
+  padding-right: 50px;
+  background-color: #ffffff;
+  color: black;
+  text-decoration: none;
+  position: relative;
+  font-weight: 700;
+  font-size: 18px;
+  display: inline;
+}
+
+.btn-secondary img {
+  position: absolute;
+  top: 23px;
+  right: 20px;
+}
+
+.banner {
+  width: 1210px;
+  /* height: 631px; */
+  margin-top: -250px;
+}
+
+.banner-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: solid black; */
+  width: calc(100% / 4);
+  color: black;
+}
+
+.text-banner h3 {
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.text-banner p {
+  font-weight: 300;
+  margin-top: -15px;
+}
+
+.branding-head {
+  margin-top: 100px;
+  color: black;
+}
+
+.branding p {
+  font-weight: 300;
+  margin-bottom: -25px;
+  opacity: 0.6;
+}
+
+.branding h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.branding-list {
+  width: 1147px;
+  margin: 60px auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  gap: 140px;
+  row-gap: 40px;
+}
+
+.branding-item {
+  padding: 20px 30px;
+  text-align: center;
+  box-shadow: 2px 6px 24px rgba(42, 44, 61, 0.16);
+}
+
+.branding-item p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+  opacity: 0.6;
+}
+
+.project-head {
+  color: black;
+  margin-top: 94px;
+}
+
+.text-project {
+  opacity: 0.6;
+}
+
+.judul-project {
+  font-weight: 600;
+  font-size: 36px;
+}
+
+.project-card {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  /* border: solid black; */
+}
+
+.project-card-item {
+  /* padding: 10px 10px; */
+  /* border: solid black; */
+  width: calc(100% / 3);
+}
+
+.judul-card {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.text-card {
+  font-size: 16px;
+  opacity: 0.6;
+  line-height: 27px;
+}
+
+.review-head {
+  color: black;
+  margin-top: 94px;
+}
+
+.text-review {
+  opacity: 0.6;
+  margin-bottom: -10px;
+}
+
+.judul-review {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.review-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 55px;
+}
+
+.review-card-item {
+  margin-top: 40px;
+  width: calc(100% / 3);
+  padding: 24px 24px;
+  border: 2px solid #2a2c3d;
+}
+
+.judul-review-card-item {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.text-review-card-item {
+  opacity: 0.6;
+  line-height: 27px;
+  height: 70px;
+  width: 302px;
+}
+
+.client-review {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.banner-down-head {
+  margin-top: 100px;
+  background-color: #2f6b4f;
+  padding-bottom: 10px;
+}
+
+.banner-down {
+  margin: 60px auto;
+  width: 661px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.judul-banner-down {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 32px;
+  line-height: 65px;
+  text-align: center;
+}
+
+.text-banner-down {
+  margin-top: -16px;
+  text-align: center;
+  line-height: 27px;
+  opacity: 0.6;
+}
+
+.btn-banner-down {
+  margin-top: 32px;
+}
+
+.btn-secondary-down {
+  padding: 23px 32px;
+  background: #ffffff;
+  text-decoration: none;
+  color: #2a2c3d;
+  font-weight: 700;
+  font-size: 20px;
+  position: relative;
+  padding-right: 50px;
+  display: inline-block;
+}
+
+.btn-secondary-down img {
+  position: absolute;
+  right: 23px;
+}
+
+.footer {
+  margin-top: 100px;
+  color: black;
+}
+
+.footer .container {
+  width: 1210px;
+}
+
+.foot {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.foot-item:nth-child(1) {
+  width: 554px;
+}
+
+.foot-item:nth-child(1) .foot-intro {
+  width: 504px;
+}
+
+.foot-item:nth-child(2) {
+  width: 98px;
+}
+
+.foot-item:nth-child(2) .foot-intro,
+.foot-item:nth-child(3) .foot-intro,
+.foot-item:nth-child(4) .foot-intro {
+  display: flex;
+  flex-direction: column;
+  row-gap: 18px;
+}
+
+.foot-item:nth-child(3) {
+  width: 97px;
+}
+
+.foot-item:nth-child(4) {
+  width: 92px;
+}
+
+.foot-brand {
+  display: flex;
+  align-items: center;
+}
+
+.foot-brand p {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.foot-intro {
+  margin-top: 16px;
+  opacity: 0.6;
+}
+
+.foot-intro p {
+  line-height: 27px;
+}
+
+.foot-intro a {
+  color: black;
+  text-decoration: none;
+}
+
+.foot-icon {
+  margin-top: 32px;
+  display: flex;
+  gap: 20px;
+}
